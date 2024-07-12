@@ -31,8 +31,18 @@ namespace Assignment_2_oop
             for (int i = 0; i < persons.Length; i++)
             {
                 Console.WriteLine(persons[i].ToString());
-            } 
+            }
             #endregion
+            #region Q2-Part02
+            // Find the oldest person
+            Person oldestPerson = Person.FindOldestPerson(persons);
+
+            // Display the oldest person's details
+            Console.WriteLine($"\nThe oldest person is {oldestPerson.Name} with age {oldestPerson.Age}."); 
+            #endregion
+
+
+
         }
     }
  }
